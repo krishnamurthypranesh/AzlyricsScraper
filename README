@@ -1,3 +1,11 @@
 This is repo contains code for scraping lyrics off azlyrics.com.
+Nothing more, nothing less.
+The program outputs a file with the lyrics of the song in it.
+The current version can be used only to scrape lyrics of azlyrics.com.
 
-Nothing more, nothing less. 
+I opted for azlyrics.com because of the really simple site structure.
+
+Conventions used:
+
+1. PEP8
+2. camelCase since it looks cool.
