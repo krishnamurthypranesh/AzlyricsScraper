@@ -1,7 +1,7 @@
 # import modules-----------
 import urllib
 import bs4
-import re
+
 # open and get site------------------
 
 # get url
