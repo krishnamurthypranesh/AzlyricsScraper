@@ -24,13 +24,8 @@ for i in range(len(unformattedLyrics)):
         continue
 # removing the first line (disclaimer) from the lyrics
 unformattedLyrics = unformattedLyrics[2:]
-removing the '<br/>' occurences from the file
-finalLyrics = []
-for i in unformattedLyrics:
-    if not isinstance(i, bs4.element.Tag):
-        finalLyrics.append(i)
-    else:
-        continue
+# removing the '<br/>' occurences from the file
+finalLyrics = [i if not isinstance(i, bs4.element.Tag) else "" for i in unformattedLyrics]
 # writing lyrics to a file------------
 fileName = input("To what file would like to the write the lyrics to? ")
 try:
